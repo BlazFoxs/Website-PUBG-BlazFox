@@ -1,0 +1,474 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #0f0f0f;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #181818;
+    border-bottom: 1px solid #333;
+}
+
+.navbar .logo h1 {
+    font-size: 1.5rem;
+    color: #ffcc00;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #222;
+    list-style: none;
+    padding: 0.5rem 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Navbar Right Buttons */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.btn-language, .btn-login, .btn-play-now {
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.btn-play-now {
+    padding: 0.5rem 1rem;
+    background-color: #ffcc00;
+    color: #000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-play-now:hover {
+    background-color: #e6b800;
+}
+
+/* Tabs */
+.map-tabs {
+    background-color: #222;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #333;
+}
+
+.map-tabs ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.map-tabs li {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.map-tabs a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.map-tabs .active-tab a {
+    border-bottom: 2px solid #ffcc00;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Map Description */
+.map-description {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #0f0f0f;
+}
+
+.map-description h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+.map-description p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.map-description .map-image img {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 5px;
+}
+
+/* Gallery Section */
+.gallery {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.gallery-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gallery-images {
+    display: flex;
+    overflow: hidden;
+    width: 80%; /* Sesuaikan dengan ukuran tampilan galeri */
+    transition: transform 0.3s ease; /* Transisi halus */
+}
+
+.gallery-images img {
+    width: 100%;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Tombol panah kiri dan kanan */
+.gallery-prev, .gallery-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.gallery-prev {
+    left: 10px;
+}
+
+.gallery-next {
+    right: 10px;
+}
+
+.gallery-prev:hover, .gallery-next:hover {
+    background-color: #444;
+}
+
+/* Major Feature Section */
+.major-feature {
+    background-image: url("../Gambar/background putih.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.major-feature h2 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 30px;
+}
+
+/* Mengatur video di major-feature */
+.major-feature video {
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    margin: 20px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.major-feature video:hover {
+    transform: scale(1.1); /* Efek zoom-in saat video di-hover */
+}
+
+/* Feature Container */
+.feature-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    text-align: center;
+    width: 250px;
+    margin: 0 10px;
+}
+
+.feature-item video {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.feature-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .gallery-images {
+        width: 100%;
+    }
+
+    .major-feature video {
+        width: 100%;
+    }
+}
+
+ /* Gallery Section */
+ .gallery {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  .gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gallery-images {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+  }
+  
+  .gallery-images img {
+    width: 100%;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-prev, .gallery-next {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .gallery-prev:hover, .gallery-next:hover {
+    background-color: #444;
+  }
+
+  /* Gallery Section */
+.gallery {
+    position: relative; /* Membuat .gallery menjadi kontainer relatif agar tombol panah bisa diposisikan di dalamnya */
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  .gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .gallery-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Membuat kontainer slider menjadi relatif agar tombol panah bisa diposisikan absolut */
+  }
+  
+  .gallery-images {
+    display: flex;
+    overflow: hidden; /* Pastikan gambar yang tidak terlihat tidak ditampilkan */
+    width: 80%; /* Sesuaikan dengan ukuran tampilan galeri */
+  }
+  
+  .gallery-images img {
+    width: 100%;
+    margin: 0 10px;
+    transition: transform 0.3s ease; /* Efek transisi halus saat gambar digeser */
+  }
+  
+  /* Tombol panah kiri dan kanan */
+  .gallery-prev, .gallery-next {
+    position: absolute;
+    top: 50%; /* Menempatkan tombol panah di tengah vertikal */
+    transform: translateY(-50%); /* Menyelaraskan tombol dengan tepat di tengah */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1; /* Pastikan tombol panah di atas gambar */
+  }
+  
+  .gallery-prev {
+    left: 10px; /* Menempatkan tombol panah kiri di sisi kiri */
+  }
+  
+  .gallery-next {
+    right: 10px; /* Menempatkan tombol panah kanan di sisi kanan */
+  }
+  
+  .gallery-prev:hover, .gallery-next:hover {
+    background-color: #444;
+  }
+
+  .gallery-images img {
+    width: 100%;  /* Atur lebar gambar sesuai dengan keinginan */
+    margin: 10px 10px;  /* Beri margin antar gambar agar tidak saling menempel */
+  }
+
+  /* Gallery Section */
+.gallery-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .gallery-images {
+    display: flex;
+    overflow: hidden; /* Ensures images that go out of bounds are hidden */
+    width: 100%; /* Set width to control how many images are shown at once */
+  }
+  
+  .gallery-images img {
+    width: 100%;
+    margin: 0 10px;
+    transition: transform 0.3s ease; /* Smooth transition for scrolling */
+  }
+  
+  .gallery-prev, .gallery-next {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .gallery-prev:hover, .gallery-next:hover {
+    background-color: #444;
+  }
+
+  .gallery-images {
+    display: flex;
+    overflow: hidden;
+    width: 80%; /* Sesuaikan dengan ukuran tampilan galeri */
+    transition: transform 0.3s ease; /* Transisi halus */
+  }
+
+  .gallery-images img {
+    width: 100%; /* Agar gambar memenuhi lebar kontainer */
+    height: auto; /* Menjaga proporsi gambar */
+    margin: 0 10px; /* Memberikan sedikit jarak antar gambar */
+  }
+
+  .gallery-images {
+    display: flex;
+    overflow: hidden;
+    width: 80%; /* Sesuaikan dengan lebar kontainer galeri */
+  }
+
+  .gallery-images {
+    display: flex;
+    overflow: hidden;
+    width: 300%; /* Tampilkan 3 gambar sekaligus */
+  }
+  
+  .gallery-images img {
+    width: 33.33%; /* Gambar mengambil 1/3 lebar kontainer */
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-prev, .gallery-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10; /* Pastikan tombol di atas gambar */
+  }
+  
+  .gallery-prev {
+    left: 10px;
+  }
+  
+  .gallery-next {
+    right: 10px;
+  }
