@@ -18,3 +18,7 @@ nextButton.addEventListener('click', () => {
   if (scrollPosition > maxScroll) scrollPosition = maxScroll;
   galleryImages.style.transform = `translateX(-${scrollPosition}px)`;
 });
+document.querySelector('.gallery-next').addEventListener('click', function() {
+    const images = document.querySelector('.gallery-images');
+    images.scrollLeft += images.clientWidth;
+});

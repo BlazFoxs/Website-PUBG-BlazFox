@@ -469,18 +469,6 @@
     transition: transform 0.3s ease;
   }
   
-  .gallery-prev, .gallery-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    z-index: 10; /* Pastikan tombol di atas gambar */
-  }
-  
   .gallery-prev {
     left: 10px;
   }
