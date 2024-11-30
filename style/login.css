@@ -1,0 +1,229 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  header .brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  header .menu-link {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .login-form form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  
+  .checkbox input {
+    margin-right: 10px;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #ff6600;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 12px;
+  }
+  
+  .options .option-link {
+    color: #ff6600;
+    text-decoration: none;
+  }
+  
+  .divider {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .social-icons a img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Video Background */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Letakkan di belakang semua elemen lainnya */
+  }
+  
+  /* Pastikan konten tidak berubah */
+  .container {
+    position: relative; /* Pastikan konten tetap berada di atas video */
+    z-index: 1;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Perbaikan Header Styling */
+header {
+    display: flex;
+    justify-content: space-between; /* Pisahkan elemen kiri dan kanan */
+    align-items: center; /* Ratakan elemen secara vertikal */
+    padding: 10px 20px; /* Beri jarak pada sisi kiri dan kanan */
+    position: fixed; /* Header tetap di atas saat scroll */
+    top: 0;
+    left: 0;
+    width: 100%; /* Lebar penuh layar */
+    background: transparent; /* Latar belakang transparan */
+    z-index: 2; /* Pastikan header tetap di atas */
+    box-sizing: border-box; /* Pastikan padding tidak memengaruhi ukuran elemen */
+  }
+  
+  header .brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0;
+  }
+  
+  header nav {
+    display: flex;
+    gap: 20px; /* Jarak antar menu */
+  }
+  
+  header .menu-link {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+
+  /* Wrapper Container */
+.container {
+    display: flex; /* Gunakan Flexbox untuk pengaturan tata letak */
+    justify-content: center; /* Atur posisi horizontal ke tengah */
+    align-items: center; /* Atur posisi vertikal ke tengah */
+    min-height: 100vh; /* Tinggi minimum 100% dari tinggi viewport */
+    box-sizing: border-box; /* Pastikan padding tidak memengaruhi ukuran elemen */
+    padding: 20px; /* Opsional: Jarak dalam jika diperlukan */
+  }
+
+  /* Footer Styling */
+footer {
+    background: rgba(0, 0, 0, 0.8); /* Latar belakang semi-transparan */
+    color: white; /* Warna teks */
+    padding: 20px; /* Ruang dalam untuk konten */
+    width: 100%; /* Lebar penuh */
+    position: relative; /* Pastikan footer tidak melayang */
+    box-sizing: border-box; /* Hindari padding memengaruhi ukuran */
+    z-index: 2; /* Pastikan di atas background video */
+  }
+  
+  .footer-content {
+    display: flex; /* Gunakan Flexbox untuk tata letak */
+    justify-content: space-between; /* Atur elemen kiri dan kanan */
+    align-items: center; /* Rata tengah secara vertikal */
+    flex-wrap: wrap; /* Responsif: elemen akan turun jika layar kecil */
+    max-width: 1200px; /* Lebar maksimum untuk konten */
+    margin: 0 auto; /* Tengahkan konten secara horizontal */
+  }
+  
+  .footer-content .left h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .footer-content .left p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+  }
+  
+  .footer-content .right a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px; /* Jarak antar tautan */
+    font-size: 14px;
+  }
+  
+  .footer-content .right a:hover {
+    text-decoration: underline; /* Efek hover */
+  }
+  
+  /* Responsif */
+  @media screen and (max-width: 768px) {
+    .footer-content {
+      flex-direction: column; /* Ubah ke kolom untuk layar kecil */
+      text-align: center; /* Teks rata tengah */
+    }
+    .footer-content .right a {
+      margin-left: 0;
+      margin-top: 10px; /* Tambahkan jarak antar link */
+    }
+  }
