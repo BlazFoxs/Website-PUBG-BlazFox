@@ -50,6 +50,36 @@ body {
   color: #ffcc00;
 }
 
+/* Logo di Tengah */
+.center-logo-container {
+  position: absolute; /* Untuk memusatkan logo */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Pastikan logo di atas elemen lain */
+  justify-content: space-between;
+}
+
+.navbar-center-logo {
+  max-width: 120px; /* Ukuran logo */
+  height: auto;
+  justify-content: space-between;
+}
+
+/* Tambahkan padding bawah pada logo */
+.navbar .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem; /* Menambahkan jarak bawah */
+  display: inline-block; /* Supaya padding berlaku */
+}
+
+/* Atur line-height untuk jarak lebih rapi */
+.navbar {
+  line-height: 1.5; /* Menambahkan tinggi baris agar lebih lega */
+}
+
 /* Dropdown Menu */
 .dropdown-menu {
   display: none;
@@ -178,3 +208,4 @@ body {
   z-index: -1;
   pointer-events: none; /* Video tidak menghalangi interaksi lainnya */
 }
+
