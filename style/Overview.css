@@ -8,11 +8,14 @@
   body {
     font-family: Arial, sans-serif;
     color: #fff;
-    background-color: #0f0f0f;
+    background-image: url("../Gambar/PUBG\ Background.jpg"); /* Ganti dengan path gambar Anda */
+    background-size: cover; /* Agar gambar menutupi seluruh halaman */
+    background-position: center; /* Posisi gambar di tengah */
+    background-attachment: fixed; /* Gambar tetap saat di-scroll */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
+}
   
   /* Navbar */
   .navbar {
@@ -20,7 +23,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #181818;
+    background :linear-gradient(to bottom,black, orange);
   }
   
   .navbar .logo a {
@@ -76,3 +79,29 @@
     display: block;
   }
   
+  /* Konten Halaman */
+h1, h3, p {
+  margin: 1rem 0;
+  line-height: 1.6;
+  max-width: 800px; /* Batasi lebar teks agar lebih rapi */
+}
+
+/* Konten Halaman di Tengah */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertikal di tengah */
+  align-items: center; /* Horizontal di tengah */
+  text-align: center;
+  flex-grow: 1; /* Isi ruang tersisa agar konten tetap di tengah */
+  padding: 2rem;
+}
+
+h1, h3, p {
+  margin: 1rem 0;
+  line-height: 1.6;
+  max-width: 800px; /* Batasi lebar teks agar lebih rapi */
+  background: rgba(0, 0, 0, 0.7); /* Tambahkan latar belakang transparan */
+  padding: 1rem;
+  border-radius: 10px; /* Tambahkan sudut melengkung */
+}

@@ -208,3 +208,19 @@ body {
   z-index: -1;
   pointer-events: none; /* Video tidak menghalangi interaksi lainnya */
 }
+
+/* Login Icon Styling */
+.nav-links .login-icon {
+  margin-left: 1rem;
+}
+
+.nav-links .login-icon img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.nav-links .login-icon img:hover {
+  transform: scale(1.1);
+}
