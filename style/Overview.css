@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'HeadlinerNo.45 DEMO';
+  src: url('./Font/HeadlinerNo.45 DEMO.ttf') format('truetype');
+}
+
+.custom-font {
+  font-family: 'HeadlinerNo45', sans-serif;
+}
+
 /* Reset CSS */
 * {
     margin: 0;
@@ -104,4 +113,12 @@ h1, h3, p {
   background: rgba(0, 0, 0, 0.7); /* Tambahkan latar belakang transparan */
   padding: 1rem;
   border-radius: 10px; /* Tambahkan sudut melengkung */
+}
+
+.content>h1{
+  font-family: Geist Mono;
+}
+
+.content>h3,p{
+  font-family: 'HeadlinerNo45', sans-serif;
 }
