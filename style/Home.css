@@ -52,15 +52,15 @@ body {
 
 /* Logo di Tengah */
 .center-logo-container {
-  position: absolute; /* Untuk memusatkan logo */
+  position: absolute; 
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10; /* Pastikan logo di atas elemen lain */
+  z-index: 10; 
   justify-content: space-between;
 }
 
 .navbar-center-logo {
-  max-width: 120px; /* Ukuran logo */
+  max-width: 120px; 
   height: auto;
   justify-content: space-between;
 }
@@ -71,13 +71,13 @@ body {
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
-  padding-bottom: 0.5rem; /* Menambahkan jarak bawah */
-  display: inline-block; /* Supaya padding berlaku */
+  padding-bottom: 0.5rem; 
+  display: inline-block; 
 }
 
 /* Atur line-height untuk jarak lebih rapi */
 .navbar {
-  line-height: 1.5; /* Menambahkan tinggi baris agar lebih lega */
+  line-height: 1.5; 
 }
 
 /* Dropdown Menu */
@@ -162,16 +162,16 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Menempatkan video di belakang konten */
+  z-index: -1; 
 }
 
 .hero-content {
-  position: relative; /* Supaya konten tetap di atas video */
+  position: relative; 
   z-index: 1;
 }
 
 .cta-button {
-  position: relative; /* Memastikan tombol tetap di atas video */
+  position: relative; 
   z-index: 1;
 }
 
@@ -190,7 +190,7 @@ body {
   padding: 0.5rem 0;
   border-radius: 5px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 10; /* Memastikan dropdown berada di atas hero video */
+  z-index: 10; 
 }
 
 .dropdown:hover .dropdown-menu {
@@ -206,7 +206,7 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  pointer-events: none; /* Video tidak menghalangi interaksi lainnya */
+  pointer-events: none; 
 }
 
 /* Login Icon Styling */

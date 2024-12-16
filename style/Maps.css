@@ -35,7 +35,7 @@
   
   .nav-links li {
     margin: 0 1rem;
-    position: relative;  /* Added for dropdown positioning */
+    position: relative;  
   }
   
   .nav-links a {
@@ -167,10 +167,10 @@
   }
 
   .feature-container {
-    display: flex; /* Mengatur container menjadi Flexbox */
-    justify-content: center; /* Mengatur video ke tengah secara horizontal */
-    gap: 20px; /* Memberikan jarak antar elemen */
-    flex-wrap: wrap; /* Membiarkan elemen turun ke baris baru jika layar kecil */
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
   }
   
   .feature-item {
@@ -185,9 +185,9 @@
   }
 
   .major-feature {
-    background-image: url("../Gambar/background\ putih.jpg"); /* Path ke gambar lokal */
-    background-size: cover; /* Membuat gambar menyesuaikan ukuran elemen */
-    background-position: center; /* Memusatkan gambar */
+    background-image: url("../Gambar/background\ putih.jpg"); 
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat; /* Mencegah pengulangan gambar */
     padding: 50px 20px; /* Tambahkan padding agar konten tetap terlihat */
     color: #fff; /* Warna teks tetap terlihat jika background gelap */

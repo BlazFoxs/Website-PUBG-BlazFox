@@ -1,10 +1,6 @@
 @font-face {
-  font-family: 'HeadlinerNo.45 DEMO';
-  src: url('./Font/HeadlinerNo.45 DEMO.ttf') format('truetype');
-}
-
-.custom-font {
-  font-family: 'HeadlinerNo45', sans-serif;
+  font-family: 'HeadlinerNo45DEMO';
+  src: url('./font/HeadlinerNo.45-DEMO.ttf') format('truetype');
 }
 
 /* Reset CSS */
@@ -17,10 +13,10 @@
   body {
     font-family: Arial, sans-serif;
     color: #fff;
-    background-image: url("../Gambar/PUBG\ Background.jpg"); /* Ganti dengan path gambar Anda */
-    background-size: cover; /* Agar gambar menutupi seluruh halaman */
-    background-position: center; /* Posisi gambar di tengah */
-    background-attachment: fixed; /* Gambar tetap saat di-scroll */
+    background-image: url("../Gambar/PUBG\ Background.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -92,27 +88,27 @@
 h1, h3, p {
   margin: 1rem 0;
   line-height: 1.6;
-  max-width: 800px; /* Batasi lebar teks agar lebih rapi */
+  max-width: 800px; 
 }
 
 /* Konten Halaman di Tengah */
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertikal di tengah */
-  align-items: center; /* Horizontal di tengah */
+  justify-content: center; 
+  align-items: center; 
   text-align: center;
-  flex-grow: 1; /* Isi ruang tersisa agar konten tetap di tengah */
+  flex-grow: 1; 
   padding: 2rem;
 }
 
 h1, h3, p {
   margin: 1rem 0;
   line-height: 1.6;
-  max-width: 800px; /* Batasi lebar teks agar lebih rapi */
-  background: rgba(0, 0, 0, 0.7); /* Tambahkan latar belakang transparan */
+  max-width: 800px; 
+  background: rgba(0, 0, 0, 0.7);
   padding: 1rem;
-  border-radius: 10px; /* Tambahkan sudut melengkung */
+  border-radius: 10px; 
 }
 
 .content>h1{
@@ -120,5 +116,9 @@ h1, h3, p {
 }
 
 .content>h3,p{
-  font-family: 'HeadlinerNo45', sans-serif;
+  font-family: 'HeadlinerNo45DEMO' , sans-serif;
+}
+
+.custom-font {
+  font-family: 'HeadlinerNo45DEMO', sans-serif;
 }
